@@ -1,6 +1,6 @@
 //Task one: Create a function that checks if a number is prime
 
-let n = 14;
+let n = 12;
 let isPrime = true;
 
 if (n <= 1) {
@@ -13,4 +13,4 @@ if (n <= 1) {
         }
     }
 }
-console.log("{n}:", isPrime ? "it's a prime number" : "it's not a prime number");
+console.log({n}, isPrime ? "it's a prime number" : "it's not a prime number");
