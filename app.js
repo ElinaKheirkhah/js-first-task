@@ -13,4 +13,4 @@ if (n <= 1) {
         }
     }
 }
-console.log("{n}:", isPrime ? "it's a prime number" : "it's a prime number");
+console.log("{n}:", isPrime ? "it's a prime number" : "it's not a prime number");
