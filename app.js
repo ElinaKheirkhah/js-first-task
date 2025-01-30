@@ -39,5 +39,19 @@ function isitPrime(number_check) {
 isitPrime(16)
 
 
+//task two: Create a function that converts time from 24-hour format to 12-hour format.
+
+
+//task three: Write a function that checks if a number is within a specified range.
+
+function isinRange(number, min, max) {
+    if (number > min && number < max) {
+        console.log({number}, "it is in range")
+    } else {
+        console.log({number}, "it isn't in range")
+    }
+}
+isinRange(70, 20, 50)
+
 
 
