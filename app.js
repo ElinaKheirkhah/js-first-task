@@ -53,5 +53,18 @@ function isinRange(number, min, max) {
 }
 isinRange(70, 20, 50)
 
+//task four: Create a function that calculates Body Mass Index (BMI) and categorizes it based on the input weight and height. The output should indicate whether the result is "Underweight," "Normal weight," "Overweight," or "Obesity."
 
+function bmiCalc(weight, height) {
+    if (weight / (height**2) < 18.5) {
+        console.log("you're in the underweight range")
+    } else if (weight / (height**2) < 25) {
+        console.log("you're in the healthy weight range")
+    } else if (weight / (height**2) < 30) {
+        console.log("you're in the overweight range")
+    } else {
+        console.log("you're in the obese range")
+    }
+}
+bmiCalc(50, 1.65)
 
