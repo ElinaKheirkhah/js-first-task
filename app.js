@@ -69,9 +69,9 @@ bmiCalc(50, 1.65);
 
 function isLeap(year) {
   if (year % 4 === 0) {
-    console.log({year}, "it's a leap year");
+    console.log({ year }, "it's a leap year");
   } else {
-    console.log({year}, "it's not a leap year");
+    console.log({ year }, "it's not a leap year");
   }
 }
 isLeap(2001);
@@ -79,19 +79,33 @@ isLeap(2001);
 //task six: Write a JavaScript function that determines if a given string contains any vowels (a, e, i, o, u). Return true if it does and false otherwise, considering both uppercase and lowercase letters.
 //first way:
 function iscontainVowels(string_test) {
-    return /[aeiouAEIOU]/.test(string_test);
+  return /[aeiouAEIOU]/.test(string_test);
 }
 console.log(iscontainVowels("hlll"));
 
 //second way:
 function containsVowel(str_test) {
-    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
-    for (let i = 0; i < str_test.length; i++) {
-        if (vowels.includes(str_test[i])) {
-            return true;
-        }
+  for (let i = 0; i < str_test.length; i++) {
+    if (vowels.includes(str_test[i])) {
+      return true;
     }
-    return false;
+  }
+  return false;
 }
 console.log(containsVowel("welcome"));
+
+//task seven: Create a function called findMinimum that takes an array of numbers as input and returns the smallest number in the array.
+
+function findMinimum(numbers) {
+  let min = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < min) {
+      min = numbers[i];
+    }
+  }
+  return min;
+}
+console.log(findMinimum([3, 1, 4, 1, 5, 9, -2]));
+
