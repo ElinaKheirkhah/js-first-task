@@ -109,3 +109,9 @@ function findMinimum(numbers) {
 }
 console.log(findMinimum([3, 1, 4, 1, 5, 9, -2]));
 
+//task eight: Create a function that reverses a given string. For example, if the input is "hello," the output should be “olleh.”
+
+function reverseString(string_reverse) {
+    return string_reverse.split('').reverse().join('');
+}
+console.log(reverseString("hello"));
